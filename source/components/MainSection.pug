@@ -1,0 +1,41 @@
+section.main-section
+  .wrapper
+    .main-section__inner
+      .main-section__info
+        h1.main-section__title.font-s-34.font-g-s-bold Откройте своё прибыльное 
+          br
+          |коворкинг‑пространство и зарабатывайте 
+          br
+          span.color-primary от 1 000 000 тенге 
+          |ежемесячно
+
+        .main-section__description.font-s-30.font-g-med Получите подробную консультацию 
+          br.d-i-block
+          |от команды франшизы «Discovery»
+
+      .main-section__chat
+        form(data-feedback-form).chat
+          .chat__container.chat-container#chatContainer
+            .chat__bot-avatar
+              div
+                img(src="images/bot-avatar.png" alt="Bot" width="68" height="68").d-block
+                span
+            .chat__wrapper#chatContentWrapper
+              .chat__content#chatContent
+              .typing-indicator#typingIndicator
+                div
+                  |Амина печатает
+                  span .
+                  span .
+                  span .
+              .chat__status#status(style="display: none;")
+                div
+                  img(src="images/checked.svg", alt="status" width="40" height="40")
+                  |Ваша заявка принята!
+            input(type="text" name="honeyfield" class="honeypot" style="display:none")
+
+        .main-section__image
+          img(src="images/main-image.png" alt="image" width="344" height="569").d-block
+
+  .main-section__bg-container
+    img(src="images/main-bg.jpg" alt="image" width="1874" height="2040").d-block

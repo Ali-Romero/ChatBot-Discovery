@@ -1,0 +1,77 @@
+.footer
+  position: relative
+  z-index 3
+  line-height: 120%
+  font-size: 14px
+  +above($breakpoints.sm)
+    font-size: 13px
+  +above($breakpoints.md)
+    font-size: 16px
+  +above($breakpoints.xxl)
+    font-size: 19px
+
+  &__row
+    margin: 0 0 0 auto
+    padding: 10px 0
+    text-align: center
+    display: flex
+    flex-direction: column
+    background-color: $color-white
+    border-radius: 16px
+    +above($breakpoints.sm)
+      border-radius: 100px
+      flex-direction: row
+      text-align: left
+      justify-content: space-between
+      align-items: center
+      padding: 8px 30px
+    +above($breakpoints.md)
+      padding: 8px 40px
+    +above($breakpoints.xxl)
+      padding: 10px 60px
+
+  &__col
+    margin: 0 0 14px 0
+    +above($breakpoints.sm)
+      margin: 0
+    &:last-child
+      margin: 0
+
+  &__container
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: 24px
+    +above($breakpoints.sm)
+      justify-content: flex-start
+    +above($breakpoints.xxl)
+      gap: 40px
+
+  &__description
+    line-height: 90%
+    display: block
+    font-size: 14px
+    letter-spacing: -0.04em;
+    +above($breakpoints.md)
+      font-size: 16px
+    +above($breakpoints.xxl)
+      font-size: 19px
+
+  &__logo
+    img
+      height: auto
+      width 68px
+      margin: auto
+      margin: 0 auto
+      +above($breakpoints.sm)
+        width 70px
+      +above($breakpoints.md)
+        width 80px
+      +above($breakpoints.xxl)
+        width 110px
+
+
+  &__privacy
+    letter-spacing: -0.04em;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;

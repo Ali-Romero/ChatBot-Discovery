@@ -1,0 +1,72 @@
+@font-face
+  font-family: "Gilroy-Regular"
+  src: url('../fonts/Gilroy-Regular.woff'), url('../fonts/Gilroy-Regular.woff2')
+  font-display: swap
+@font-face
+  font-family: "Gilroy-Medium"
+  src: url('../fonts/Gilroy-Medium.woff'), url('../fonts/Gilroy-Medium.woff2')
+  font-display: swap
+@font-face
+  font-family: "Gilroy-Semibold"
+  src: url('../fonts/Gilroy-Semibold.woff'), url('../fonts/Gilroy-Semibold.woff2')
+  font-display: swap
+@font-face
+  font-family: "Gilroy-Bold"
+  src: url('../fonts/Gilroy-Bold.woff'), url('../fonts/Gilroy-Bold.woff2')
+  font-display: swap
+
+@import 'common/variables'
+@import 'common/*'
+@import 'components/*'
+
+.page
+  display: flex
+  flex-direction: column
+  min-height: 100%
+  overflow: hidden
+  position relative
+  &--main
+    +above($breakpoints.sm)
+      padding: 0 6px
+    +above($breakpoints.md)
+      padding: 0 10px
+    +above($breakpoints.xxl)
+      padding: 0 14px
+    .page__header
+      position relative
+      .header
+        position: absolute
+        z-index 1
+        top: 0
+        left: 0
+        right 0
+
+  &--thanks
+    font-size: 13px
+    line-height: 130%
+    color: $color-black
+    position relative
+    z-index 1
+    +above($breakpoints.xxl)
+      font-size: 16px
+    .header
+      &__connection
+        display: none
+
+  &__container
+    flex: 1
+    display: flex
+    position relative
+    flex-direction: column;
+    +above($breakpoints.sm)
+      padding: 12px 0 0 0
+    +above($breakpoints.md)
+      padding: 14px 0 0 0
+    +above($breakpoints.xxl)
+      padding: 20px 0 0 0
+
+  &__content
+    flex: 1
+    display: flex
+    justify-content: center;
+    width 100%

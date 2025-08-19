@@ -1,0 +1,106 @@
+.main-section
+  color: #f5f5f5;
+  width 100%
+  position relative
+  max-width: 1920px
+  margin: 0 auto
+  width 100%
+
+  &__bg-container
+    position: absolute
+    left: calc(50% - 377px)
+    bottom: 0
+    top: 0
+    width 755px
+    overflow: hidden
+    border-radius: 10px
+    +above($breakpoints.sm)
+      margin: 0 auto
+      left: 0
+      right 0
+      width 100%
+      border-radius: 14px
+      max-width 1874px
+    +above($breakpoints.xxl)
+      border-radius: 20px
+    img
+      height: auto
+      width 800px
+      +above($breakpoints.sm)
+        width 100%
+    &:before
+      content: ""
+      position: absolute
+      z-index -1
+      bottom: 0
+      left: 0
+      right 0
+      top: 0
+      background-color: #E3F3BA
+    &:after
+      content: ""
+      position: absolute
+      z-index 0
+      left: 0
+      right 0
+      bottom: 0
+      top: 0
+      background-color: rgba(0, 0, 0, 0.351)
+      +above($breakpoints.sm)
+        content: none
+
+  &__inner
+    padding: 76px 0 20px 0
+    +above($breakpoints.sm)
+      padding: 80px 0 24px 0
+    +above($breakpoints.md)
+      padding: 100px 0 30px 0
+    +above($breakpoints.xxl)
+      padding: 160px 0 60px 0
+
+  &__info
+    position relative
+    z-index 2
+    text-align: center
+    margin: 0 0 280px 0
+    +above($breakpoints.sm)
+      text-align: left
+      margin: 0 0 50px 0
+    +above($breakpoints.md)
+      margin: 0 0 70px 0
+    +above($breakpoints.xxl)
+      margin: 0 0 120px 0
+
+  &__title
+    margin: 0 0 10px 0
+    letter-spacing: -0.04em;
+    +above($breakpoints.sm)
+      margin: 0 0 14px 0
+    +above($breakpoints.md)
+      margin: 0 0 30px 0
+    +above($breakpoints.xxl)
+      margin: 0 0 40px 0
+
+  &__description
+    letter-spacing: -0.04em;
+
+  &__chat
+    position: relative
+    z-index 22
+
+  &__image
+    position: absolute
+    pointer-events: none
+    bottom: 99%
+    right: calc(50% - 112px)
+    +above($breakpoints.sm)
+      right: 60px
+    +above($breakpoints.md)
+      right: 102px
+    img
+      height: auto
+      width 180px
+      +above($breakpoints.md)
+        width 238px
+      +above($breakpoints.xxl)
+        width 344px
