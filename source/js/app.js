@@ -395,8 +395,6 @@ function renderSwiper(swiperItems) {
   animateFadeIn(element);
   smoothScrollToBottom();
 
-  $('.iframe-reviews').fancybox({})
-
   new Swiper(element, {
     speed: 450,
     effect: 'slide',

@@ -36,7 +36,7 @@
       left: 0
       right 0
       top: 0
-      background-color: #E3F3BA
+      background-color: #D5ECB1
     &:after
       content: ""
       position: absolute
@@ -92,15 +92,17 @@
     position: absolute
     pointer-events: none
     bottom: 99%
-    right: calc(50% - 112px)
+    right: calc(50% - 94px)
     +above($breakpoints.sm)
       right: 60px
     +above($breakpoints.md)
-      right: 102px
+      right: 132px
     img
       height: auto
-      width 180px
+      width 176px
+      +above($breakpoints.sm)
+        width 166px
       +above($breakpoints.md)
-        width 238px
+        width 220px
       +above($breakpoints.xxl)
-        width 344px
+        width 322px
