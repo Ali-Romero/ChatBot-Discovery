@@ -407,8 +407,8 @@ function renderSwiper(swiperItems) {
     breakpoints: {
       200: { spaceBetween: 10, slidesPerView: 1 },
       768: { spaceBetween: 10, slidesPerView: 2 },
-      1024: { spaceBetween: 10, slidesPerView: 2 },
-      1400: { spaceBetween: 10, slidesPerView: 2 },
+      1024: { spaceBetween: 10, slidesPerView: 3 },
+      1400: { spaceBetween: 10, slidesPerView: 3 },
     },
   });
 }

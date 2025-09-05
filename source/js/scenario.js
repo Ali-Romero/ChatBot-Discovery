@@ -242,11 +242,11 @@ const chatScenario = (() => {
         type: 'swiper',
         value: [
           { src: "images/gallery-img-1.jpg" },
-          { src: "images/gallery-img-1.jpg" },
-          { src: "images/gallery-img-1.jpg" },
-          { src: "images/gallery-img-1.jpg" },
-          { src: "images/gallery-img-1.jpg" },
-          { src: "images/gallery-img-1.jpg" },
+          { src: "images/gallery-img-2.jpg" },
+          { src: "images/gallery-img-3.jpg" },
+          { src: "images/gallery-img-4.jpg" },
+          { src: "images/gallery-img-5.jpg" },
+          { src: "images/gallery-img-6.jpg" },
 
         ],
       },
